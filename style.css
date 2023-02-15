@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap");
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Cocogoose;
+  src: url('../assets/fonts/cocogoose/Cocogoose Pro-trial.ttf');
+}
+
+:root {
+  --primary-color: #FFFFFF;
+  --secondary-color: #000000;
+  --tertiary-color: #9b59b6;
+}
+
+html,
+body {
+  background-color: var(--primary-color);
+  background-image: url("./images/background.png");
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header section */
+
+.header-container {
+  height: 30px;
+  background: linear-gradient(to right, #000 50%, #ccc 50%);
+}
+
+.header-container::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 100px 45%;
+  border-color: transparent transparent #ccc transparent;
+}
+
+.header-container::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 45% 100px 0;
+  border-color: transparent #000 transparent transparent;
+}
+
+.header-content {
+  position: relative;
+}
+
+.header-content:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 100px 100vw;
+  border-color: transparent transparent black transparent;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 20px;
+}
+
+.header-row {
+  margin-bottom: 29px;
+  margin-left: 78%;
+  display: flex;
+  align-items: center;
+}
+
+.header-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.header-facebook i,
+.header-twitter i {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.header-language,
+.header-mypage,
+.header-logout {
+  padding: 0 15px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.header-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header-language {
+  text-decoration: none;
+}
+
+.nav-container {
+  background-color: var(--primary-color);
+  height: 60px;
+  color: #000;
+}
+
+.nav-inner-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-logo {
+  height: 40px;
+  margin-left: 20px;
+}
+
+.nav-links-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: 20px;
+}
+
+.nav-links-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-links-list li {
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: #454545;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar-btn {
+  border: solid;
+  border-color: red;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: red;
+}
+
+.headline-section {
+  margin-left: 14%;
+}
+
+@supports (-webkit-background-clip: text) {
+  .section__headline {
+    background: url("./images/intro-header-text-bg.png") no-repeat;
+    background-size: 100vw;
+    color: transparent;
+    -webkit-background-clip: text;
+  }
+}
+
+.section__headline .section__text {
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  color: #ec5242;
+  margin-bottom: 10px;
+}
+
+.section__headline h1 {
+  font-family: 'COCOGOOSE', 'Assistant', sans-serif;
+  text-transform: uppercase;
+}
+
+.section__description {
+  background-color: rgb(247, 247, 247);
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  width: 90%;
+  padding: 10px;
+  text-align: justify;
+  font-family: "Lato", sans-serif;
+  color: rgb(111, 112, 116);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.section__date {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  color: rgb(111, 112, 116);
+}
+
+.section__place {
+  color: rgb(111, 112, 116);
+}
+
+
